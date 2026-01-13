@@ -38,4 +38,6 @@ const reverseString = (text) => {
 };
 console.log (reverseString("hello"));
 
-
+//Q.7. Create a Username
+const createUsername = (firstname, lastname = "user") => (firstname + "_" + lastname).toLowerCase();
+console.log(createUsername("Nirjala", "Tripathi"));
