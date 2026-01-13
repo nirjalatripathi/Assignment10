@@ -61,3 +61,16 @@ const calculateGrade= (score) => {
 };
 console.log ("Grade is", calculateGrade(75));
 
+//Q.11. 
+const isPalindrome = (text) =>{
+    let cleanedText = text.toLowerCase().replace(/\s/g, "");
+    let reversedText = cleanedText.split("").reverse().join("");
+    if (cleanedText === reversedText) {
+        return true;
+    }
+    else{
+        return false;
+    }
+};
+console.log (isPalindrome("level"));
+onsole.log (isPalindrome("Hello"));
