@@ -51,3 +51,13 @@ console.log ("Addition:", applyOperation (6,3, add));
 const filterAdults= (age) => age.filter (age => age => 18);
 console.log (filterAdults([11, 15, 18, 33, 20]));
 
+//Q.10. 
+const calculateGrade= (score) => {
+    if (score >=90) return "A";
+    else if (score >=80) return "B";
+    else if (score >=70) return "C";
+    else if (score >=60) return "D";
+    else return "F";
+};
+console.log ("Grade is", calculateGrade(75));
+
