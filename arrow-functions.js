@@ -47,3 +47,7 @@ const applyOperation= (num1, num2, operation) => operation(num1, num2);
 const add = (a,b) => a+b;
 console.log ("Addition:", applyOperation (6,3, add));
 
+// Q.9. Filter age of adult
+const filterAdults= (age) => age.filter (age => age => 18);
+console.log (filterAdults([11, 15, 18, 33, 20]));
+
