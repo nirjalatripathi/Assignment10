@@ -27,3 +27,15 @@ const findMax= (numbers) => {
      return max;
 };
 console.log ("Maximum is", findMax ([3, 7, 2, 9, 1]));
+
+// Q.6. Reverse a string 
+const reverseString = (text) => {
+    let reversed = " ";
+    for (let i = text.lenth-1 ; i>=0; i--) {
+        reversed += text[i];
+    }
+    return reversed;
+};
+console.log (reverseString("hello"));
+
+
