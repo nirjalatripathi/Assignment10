@@ -15,3 +15,15 @@ console.log ("Is 13 even? ", isEven(13));
 const celsiusToFahrenheit = (celsius) => (celsius * 9/5) +32;
 console.log ("5 degree C in F is", celsiusToFahrenheit(5));
 
+//Q.5. Find maximum in array
+const findMax= (numbers) => {
+    let max = numbers [0];
+    for (let i = 1; i <numbers.length; i++) {
+        if (numbers[i] > max) {
+            max= numbers[i];
+            
+        }
+    }
+     return max;
+};
+console.log ("Maximum is", findMax ([3, 7, 2, 9, 1]));
