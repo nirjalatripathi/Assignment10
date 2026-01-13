@@ -7,3 +7,6 @@ console.log (greetUser ("Nirjala"));
 const calculateArea = (length, width) => length*width;
 console.log ("The area of rectangle is", calculateArea (5,8));
 
+// Q.3. Odd or even 
+const isEven = (num) => num % 2 ===0;
+console.log ("Is 13 even? ", isEven(13));
