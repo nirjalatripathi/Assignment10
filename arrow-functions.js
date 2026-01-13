@@ -41,3 +41,9 @@ console.log (reverseString("hello"));
 //Q.7. Create a Username
 const createUsername = (firstname, lastname = "user") => (firstname + "_" + lastname).toLowerCase();
 console.log(createUsername("Nirjala", "Tripathi"));
+
+//Q.8. Function using callback
+const applyOperation= (num1, num2, operation) => operation(num1, num2);
+const add = (a,b) => a+b;
+console.log ("Addition:", applyOperation (6,3, add));
+
