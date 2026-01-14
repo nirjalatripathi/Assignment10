@@ -12,3 +12,13 @@ for (let i=0; i < number.length; i++) {
     sum= sum +numbers[i];
 }
 console.log ("The sum of all elements is", sum);
+
+//Q.3. Find the largest number in a given array.
+let num = [2,3, 5, 4, 1];
+let largest = num[0]; // Assume first element is largest
+for (let i=1; i < num.length ; i++) {
+    if (num[i] > largest) {
+        largest = numbers[i]; // update largest if current num is bigger
+    }
+}
+console.log ("Largest number is", largest);
