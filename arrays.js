@@ -60,3 +60,20 @@ for (let i = 0; i < numbers.length; i++) {
 if (!found) {
     console.log("Element not found");
 }
+
+// Q.8. Remove duplicate elements from an array and store unique values in a new array
+let el = [1,2,3,3,4,5];
+let uniqueNumbers =[];
+for (let i=0; i<numbers.length; i++) {
+    let isDuplicate= false;
+    for (let j=0; j<uniqueNumbers.length; j++) {
+        if (numbers[i] ===uniqueNumbers[j]) {
+            isDuplicate= true;
+            break;
+        }
+    }
+    if (!isDuplicate) {
+        uniqueNumbers.push(numbers[i]);
+    }
+}
+console.log ("Unique elements:",uniqueNumbers);
