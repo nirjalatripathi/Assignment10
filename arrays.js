@@ -22,3 +22,17 @@ for (let i=1; i < num.length ; i++) {
     }
 }
 console.log ("Largest number is", largest);
+
+// Q.4. Count how many even numbers and odd numbers are present in an array
+let elements = [5, 7, 18, 23, 44];
+let evenCount = 0;
+let oddCount= 0;
+for (let i=0; i< numbers.length; i++) {
+    if (numbers[i] % 2 ===0) {
+        evenCount = evenCount +1;
+    } else {
+        oddCount = oddCount +1;
+    }
+}
+console.log ("Even numbers:", evenCount);
+console.log ("Odd numbers:", oddCount);
