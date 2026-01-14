@@ -44,3 +44,19 @@ for (let i= numbers.length -1; i>=0; i--) {
     reversed.push (numbers[i]);
 }
 console.log ("reversed array is", reversed);
+
+//Q.6. Check whether a given element exists in an array. If it exists, print its index; otherwise, print "Element not found"
+let numb = [10, 20, 30, 40, 50];
+let elementToFind = 30;
+let found = false;
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numb[i] === elementToFind) {
+        console.log("Element found at index:", i);
+        found = true;
+        break;
+    }
+}
+if (!found) {
+    console.log("Element not found");
+}
