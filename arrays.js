@@ -36,3 +36,11 @@ for (let i=0; i< numbers.length; i++) {
 }
 console.log ("Even numbers:", evenCount);
 console.log ("Odd numbers:", oddCount);
+
+//Q.5. Reverse an array without using the built-in reverse() method
+let element= [1, 2, 3, 4, 5];
+let reversed= [];
+for (let i= numbers.length -1; i>=0; i--) {
+    reversed.push (numbers[i]);
+}
+console.log ("reversed array is", reversed);
