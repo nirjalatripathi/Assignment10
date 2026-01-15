@@ -22,3 +22,6 @@ person.country = "Nepal";
 person.city="Lalitpur";
 console.log(person);
 
+//Q.4. Delete a property from an object and print the updated object.
+delete person.age;
+console.log(person);
