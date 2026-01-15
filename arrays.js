@@ -111,4 +111,26 @@ for (let i= numbers.length - 1; i>0; i--) {
     array[0] =lastElement;
     console.log ("Array after rotation is", array);
 
+//Q.11. Merge two arrays into one and sort the merged array in ascending order without using sort()
+let array1 = [4, 2, 6];
+let array2 = [1, 5, 3];
 
+let mergedArray = [];
+
+for (let i = 0; i < array1.length; i++) {
+    mergedArray.push(array1[i]);
+}
+for (let i = 0; i < array2.length; i++) {
+    mergedArray.push(array2[i]);
+}
+for (let i = 0; i < mergedArray.length; i++) {
+    for (let j = i + 1; j < mergedArray.length; j++) {
+        if (mergedArray[i] > mergedArray[j]) {
+            let temp = mergedArray[i];
+            mergedArray[i] = mergedArray[j];
+            mergedArray[j] = temp;
+        }
+    }
+}
+
+console.log("Merged and sorted array:", mergedArray);
