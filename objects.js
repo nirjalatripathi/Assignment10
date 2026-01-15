@@ -75,3 +75,25 @@ for (let key in marks) {
 }
 
 console.log("Highest:", highestKey, highestValue);
+
+//Q.10. Merge two objects into a single object without using built-in merging methods.
+let obj1 = {
+    a: 1,
+    b: 2
+};
+
+let obj2 = {
+    c: 3,
+    d: 4
+};
+
+let mergedObject = {}; 
+// Copy obj1 properties
+for (let key in obj1) {
+    mergedObject[key] = obj1[key];
+}
+// Copy obj 2 properties 
+for (let key in obj2) {
+    mergedObject[key] = obj2[key];
+}
+console.log("Merged Object:", mergedObject);
