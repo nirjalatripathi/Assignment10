@@ -46,3 +46,13 @@ for (let key in person){
 }
 console.log ("Total properties are", count);
 
+//Q.8.  Convert an object into an array of keys and an array of values.
+let keys = [];
+let values = [];
+
+for (let key in person) {
+    keys.push(key);         
+    values.push(person[key]); 
+}
+console.log("Keys:", keys);
+console.log("Values:", values);
