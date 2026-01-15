@@ -56,3 +56,22 @@ for (let key in person) {
 }
 console.log("Keys:", keys);
 console.log("Values:", values);
+
+//Q.9. Given an object with numeric values, find the property with the highest value.
+let marks = {
+    math: 85,
+    science: 92,
+    english: 78
+};
+
+let highestKey = "";
+let highestValue = -Infinity;
+
+for (let key in marks) {
+    if (marks[key] > highestValue) {
+        highestValue = marks[key];
+        highestKey = key;
+    }
+}
+
+console.log("Highest:", highestKey, highestValue);
