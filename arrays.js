@@ -101,3 +101,14 @@ for (let i=2; i<numbers.length; i++) {
 }
 console.log ("Second largest is", secondLargest);
 
+// Q.10. Rotate an array to the right by one position
+let array= [1, 2, 3, 4, 5];
+let lastElement= array[numbers.length -1];
+//shift all elements to the right
+for (let i= numbers.length - 1; i>0; i--) {
+    array[i] = numbers[i-1];
+}
+    array[0] =lastElement;
+    console.log ("Array after rotation is", array);
+
+
