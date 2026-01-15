@@ -77,3 +77,27 @@ for (let i=0; i<numbers.length; i++) {
     }
 }
 console.log ("Unique elements:",uniqueNumbers);
+
+//Q.9. Find the second largest number in an array without sorting it
+let no = [5, 7, 8, 9, 17];
+// Assume first two elements
+let Largest= no[0];
+let secondLargest= no[1];
+//Swap if firs is smaller than second
+if (secondLargest > largest) {
+    let temp= largest;
+    largest= secondLargest;
+    secondLargest= temp;
+}
+for (let i=2; i<numbers.length; i++) {
+    if (no [i] > largest ){
+        secondLargest= largest;
+        largest= no[i];
+
+    }
+    else if (no[i] > secondLargest) {
+        secondLargest = no[i];
+    }
+}
+console.log ("Second largest is", secondLargest);
+
