@@ -31,3 +31,11 @@ for (let key in person) {
     console.log(key + ":", person[key]);
 }
 
+//Q.6. Check whether a given property exists in an object.
+if ("age" in person){
+    console.log ("Age exists");
+}
+else {
+    console.log ("Age does not exist");
+}
+
