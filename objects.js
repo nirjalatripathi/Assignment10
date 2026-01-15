@@ -25,3 +25,9 @@ console.log(person);
 //Q.4. Delete a property from an object and print the updated object.
 delete person.age;
 console.log(person);
+
+//Q.5.  Loop through all properties of an object and print each key and value.
+for (let key in person) {
+    console.log(key + ":", person[key]);
+}
+
