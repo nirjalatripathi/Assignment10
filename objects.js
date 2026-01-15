@@ -39,3 +39,10 @@ else {
     console.log ("Age does not exist");
 }
 
+//Q.7. Count the total number of properties in an object.
+let count=0;
+for (let key in person){
+    count++;
+}
+console.log ("Total properties are", count);
+
