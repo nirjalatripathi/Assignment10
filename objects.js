@@ -6,3 +6,12 @@ let person={
     city:"Kathmandu"
 }
 console.log(person);
+
+//Q.2. Access and print the value of a specific property from an object.
+let property={
+    name: "Nirjala",
+    age: 19,
+    city: "Kathmandu"
+};
+console.log(property.name);
+
