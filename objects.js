@@ -15,3 +15,10 @@ let property={
 };
 console.log(property.name);
 
+//Q.3. Add a new property to an existing object and update the value of an existing property
+//New peoperty
+person.country = "Nepal";
+//Updated property
+person.city="Lalitpur";
+console.log(person);
+
